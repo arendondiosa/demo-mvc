@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Flask App</title>
+</head>
+
+<body>
+    <h1>Users List</h1>
+
+    {% for user in users %}
+        <div>
+            <span>{{ user.id }}</span> {{ user.name }} {{ user.last_name }}
+        </div>
+    {% endfor %}
+</body>
+
+</html>
